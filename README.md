@@ -31,7 +31,7 @@ python main.py <start_url> --output_file <filename> --max_workers <number>
 
 ### Example:
 ```bash
-python crawl_script.py "https://example.com/docs" --output_file output.md --max_workers 10
+python main.py "https://example.com/docs" --output_file output.md --max_workers 10
 ```
 
 ## Output
