@@ -14,14 +14,14 @@ This script is a simple web crawler that extracts content from a given website a
 Ensure you have Python installed, then install the required dependencies:
 
 ```bash
-pip install requests trafilatura beautifulsoup4 concurrent.futures argparse
+pip install trafilatura beautifulsoup4 requests markdownify
 ```
 
 ## Usage
 Run the script with the following command:
 
 ```bash
-python crawl_script.py <start_url> --output_file <filename> --max_workers <number>
+python main.py <start_url> --output_file <filename> --max_workers <number>
 ```
 
 ### Arguments:
