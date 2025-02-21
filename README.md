@@ -1,4 +1,4 @@
-# Website Crawler
+# Website to Markdown
 
 ## Overview
 This script is a simple web crawler that extracts content from a given website and converts it into Markdown format. It supports multi-threaded crawling to improve speed and allows customization of parameters such as maximum workers.
