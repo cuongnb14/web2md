@@ -1,4 +1,5 @@
-trafilatura 
-beautifulsoup4
-requests 
-markdownify
+trafilatura==2.0.0
+beautifulsoup4==4.13.3
+requests==2.32.3
+markdownify==0.14.1
+playwright==1.50.0
