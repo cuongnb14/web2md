@@ -66,7 +66,7 @@ class Web2Md:
 
     def _crawl_page(self, url, lock):
         """Fetch content and save to file safely"""
-        print(f"Crawling: {url}")
+        print(f"crawling: {url}")
         markdown_content, internal_links = self._fetch_page(url)
 
         # Write to file with thread safety
@@ -84,7 +84,7 @@ class Web2Md:
         with open(self.output_file, "w", encoding="utf-8") as f:
             pass
 
-        print(f"Crawling: {self.start_url}")
+        print(f"crawling: {self.start_url}")
         markdown_main, internal_links = self._fetch_page(self.start_url)
 
         # Write main page content first

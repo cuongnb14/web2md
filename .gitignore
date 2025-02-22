@@ -179,5 +179,3 @@ crawled_content.md
 .idea/
 data/
 tmp/
-
-Makefile

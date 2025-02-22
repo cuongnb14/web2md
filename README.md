@@ -8,13 +8,12 @@ This script is a simple web crawler that extracts content from a given website a
 - Crawls internal links.
 - Uses multi-threading for faster execution.
 - Saves the extracted content to a Markdown file.
-- Displays execution time and total pages crawled.
 
 ## Installation
 Ensure you have Python installed, then install the required dependencies:
 
 ```bash
-pip install trafilatura beautifulsoup4 requests markdownify
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -26,7 +25,7 @@ python main.py <start_url> --output_file <filename> --max_workers <number>
 
 Or with docker
 ```bash
-docker run --rm -v ./:/tmp/out cuongnb14/web2md:1.0 <start_url> --output_file /tmp/out.md
+docker run --rm -v ./:/tmp/out cuongnb14/web2md:1.0.1 <start_url> --output_file /tmp/out.md
 ```
 
 ### Arguments:
@@ -38,15 +37,3 @@ docker run --rm -v ./:/tmp/out cuongnb14/web2md:1.0 <start_url> --output_file /t
 ```bash
 python main.py "https://example.com/docs" --output_file output.md --max_workers 10
 ```
-
-## Output
-- The script crawls the given URL and its internal links.
-- Extracted content is stored in the specified Markdown file.
-- At the end of execution, the script prints the total time taken and the number of pages crawled.
-
-## License
-This project is open-source and available under the MIT License.
-
-## Contributions
-Feel free to submit pull requests or report issues if you find any bugs or have suggestions for improvements.
-

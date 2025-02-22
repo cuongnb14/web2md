@@ -1,4 +1,3 @@
-# Use an official Python runtime as a parent image
 FROM python:3.11-slim
 
 ENV REFRESHED_AT=2025-02-22
@@ -26,5 +25,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# Set the default command to run the crawler
-CMD ["python", "main.py"]
+ENTRYPOINT ["python", "main.py"]
