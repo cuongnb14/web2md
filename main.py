@@ -29,7 +29,7 @@ def get_internal_links(url, base_domain):
 
 def crawl_page(link, lock, output_file):
     """Fetch content and save to file safely"""
-    print(f"\nCrawling: {link}")
+    print(f"crawling: {link}")
     markdown_content = fetch_markdown(link)
     
     # Write to file with thread safety
@@ -48,7 +48,7 @@ def crawl_site(start_url, output_file, max_workers):
     with open(output_file, "w", encoding="utf-8") as f:
         pass
     
-    print(f"\nCrawling: {start_url}")
+    print(f"crawling: {start_url}")
     markdown_main = fetch_markdown(start_url)
     
     # Write main page content first

@@ -24,6 +24,11 @@ Run the script with the following command:
 python main.py <start_url> --output_file <filename> --max_workers <number>
 ```
 
+Or with docker
+```bash
+docker run --rm -v ./:/tmp/out cuongnb14/web2md:1.0 <start_url> --output_file /tmp/out.md
+```
+
 ### Arguments:
 - `<start_url>`: The starting URL for crawling.
 - `--output_file`: The output file to store the extracted content (default: `crawled_content.md`).
