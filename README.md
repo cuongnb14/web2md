@@ -32,6 +32,8 @@ docker run --rm -v ./:/tmp/out cuongnb14/web2md:1.0.1 <start_url> --output_file 
 - `<start_url>`: The starting URL for crawling.
 - `--output_file`: The output file to store the extracted content (default: `crawled_content.md`).
 - `--max_workers`: The number of concurrent workers (default: `5`).
+- `--rendering`: Use playwright to render page
+- `--only-main`: Only use playwright for first page
 
 ### Example:
 ```bash
